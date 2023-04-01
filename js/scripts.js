@@ -67,3 +67,6 @@ function checkWidget() {
 checkWidget();
 // Call the removeWidget function after the page has loaded
 
+//Before After Function -->>>
+document.querySelector(".compare-slider #compare-ip").addEventListener("input",function(e){document.querySelector(".compare-slider .before-slider .after-slider").style.width = (+e.target.value) + "px";});
+//Before After Function END--<<<
