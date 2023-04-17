@@ -11779,73 +11779,82 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 /* Before => After  Slider ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////->>>*/
+/* It will be deactivated to include slider on webpages, activate if necessary
+* {
+  box-sizing:border-box
+} 
+*/
 
-/*When inserting a different img, this should be the codes to be changed:
-    -AAA000: Modify Height
-    -AAA001: Change image url (they must be the same size)
+.img-slider {
+  width:100%;
+  display:block;
+}
 
-    */
+.container-slider2 {
+  width:50%;
+  display:block;
+  margin:30px auto
+}
+
+#before-after-slider {
+  width:100%;
+  position:relative;
+  overflow:hidden;
+  border:3px solid white;
+}
+
+#after-image {
+  display:block
+}
+
+#before-image {
+  position:absolute;
+  height:100%;
+  width:50%;
+  top:0;
+  left:0;
+  overflow:hidden;
+  z-index:2;
+}
+
+#resizer {
+  position:absolute;
+  display:flex;
+  align-items:center;
+  z-index:5;
+  top:0;
+  left:50%;
+  height:100%;
+  width:4px;
+  background:white;
+  /*Stop vertical scrolling on touch*/
+  -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
+
+#resizer:after {
+  background:linear-gradient(62deg,#bc6ee6 15%,#661a8e);
+  content: "↔" ;
+  font-size:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  position:absolute;
+  margin: 0 0 0 -16px;
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  border:3px solid white;
+
+}
+
+@media (max-width:767px) {
+  .container-slider2 {
+    width:100%;
+    padding:0 20px
+  }
+}
 
 
-    .container-slider{
-      display: flex;
-      justify-content: center
-  }
-  .container .title {
-      text-align: center; 
-      margin-bottom: 40px;
-      color :#acacac;
-      font-size: 40px;
-  }    
-  .compare-slider {
-      position: relative;
-      width: 640px;
-      height: 300px; /*Code: AAA000*/
-      border :1px solid #f5f5f5;
-      box-shadow:0px 0px 20px 5px rgba(0, 0, 0, 0.15) ;
-      margin-right: 0px; /*This can propery can be deleted or not, sometimes it's necessary*/
-  }
-   .compare-slider .before-slider {
-      position: relative;
-      top: 0px;
-      width:100%; 
-      height: 100%;
-      background:url("/assets/img/sliders/test.png"); /*Code: AAA001*/
-  }
-  .compare-slider .before-slider .after-slider{
-      position: absolute;
-      left: 0px;
-      top: 0px;
-      width:320px; /*???*/
-      height: 300px; /*Vertical Changes offset*/ /*Code: AAA000*/
-      background:url("/assets/img/sliders/test2.png"); /*Code: AAA001*/
-      z-index:2;
-  }
-  /*Vertical Bar Position*/
-  .compare-slider input {
-      position:absolute;
-      top:0px;
-      left:0px;
-      -webkit-appearance: none;
-      z-index:3;
-      width: 100%; /*Bar Working Zone - Eg: If it is reduced to 20px, at 10px it will change the image 50%  */
-      height: 100%; /*Vertical Offset*/
-      background:transparent;
-  }
-  /*Vertical Bar (Before)*/
-  .compare-slider input::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      display:block;
-      width: 8px;
-      height: 350px; 
-      border:1px solid rgb(100, 100, 100);
-      background: white;
-      cursor:pointer;
-  }
-  /*Vertical Bar (After)*/
-  .compare-slider input::-webkit-slider-thumb:active{
-      background:#bc6ee6;
-      border: 1px solid #661a8e;
-      transition: all 300ms ease-in-out;
-  }
 /* <<<---END Before => After  Slider ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
