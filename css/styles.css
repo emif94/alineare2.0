@@ -11887,5 +11887,13 @@ section#contact form#contactForm :-ms-input-placeholder {
     width: 13%; }
 }
 
+.mapPB{
+  padding-bottom: 15px !important;
+  background-color: #212529;
+}
 
+.centerItem{
+  display: flex;
+  justify-content: center;
+}
 /* <<<---END Before => After  Slider ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
