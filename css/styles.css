@@ -11848,6 +11848,21 @@ section#contact form#contactForm :-ms-input-placeholder {
   border:3px solid white;
 
 }
+.whatsapp {
+  position: fixed;
+  top: 650px;
+  right: 50px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999999;
+  border-radius: 50px; }
+
+  /*-----Animaciones--------------------------------------------------------------->>>*/
+.animatedhover {
+  animation-play-state: paused; }
+
+.animatedhover:hover {
+  animation-play-state: running; }
 /*Custom Media Screen //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 @media (max-width:767px) {
   .container-slider2 {
@@ -11862,6 +11877,14 @@ section#contact form#contactForm :-ms-input-placeholder {
     padding-bottom: 16.5rem;
     
   }
+  .whatsappMobile {
+    position: fixed;
+    top: 570px;
+    right: 6px;
+    display: flex;
+    justify-content: flex-end;
+    transform: translate(-12px, -96px);
+    width: 13%; }
 }
 
 
