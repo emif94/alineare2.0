@@ -11848,7 +11848,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   border:3px solid white;
 
 }
-
+/*Custom Media Screen //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 @media (max-width:767px) {
   .container-slider2 {
     width:100%;
@@ -11856,6 +11856,11 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
   .AOSOverflowHide{
     overflow-x: hidden;
+  }
+  header.masthead {
+    background-image: url("../assets/img/header-bg-resp.jpeg");
+    padding-bottom: 16.5rem;
+    
   }
 }
 
