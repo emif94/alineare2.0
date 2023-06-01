@@ -12,13 +12,24 @@ window.addEventListener('DOMContentLoaded', event => {
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
+        const navbarTextColor = document.body.querySelectorAll('.navbarItems');
+        console.log(navbarTextColor)
         if (!navbarCollapsible) {
             return;
         }
         if (window.scrollY === 0) {
             navbarCollapsible.classList.remove('navbar-shrink')
+            navbarTextColor.forEach(function(item) {
+              item.classList.add('navbarTextColor');
+            });
+            
+
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
+            navbarTextColor.forEach(function(item) {
+              item.classList.remove('navbarTextColor');
+            });
+            
         }
 
     };

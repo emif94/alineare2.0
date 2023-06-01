@@ -3031,13 +3031,13 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #bc6ee6;
-  border-color: #bc6ee6;
+  background-color: #cd88f2;
+  border-color: #cd88f2;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #661a8e;
-  border-color: #661a8e;
+  background-color: #b372d6;
+  border-color: #a64fd4;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
@@ -4091,6 +4091,10 @@ textarea.form-control-lg {
   border: 1px solid transparent;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
+}
+
+.navbarTextColor {
+  color:white !important;
 }
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
@@ -11363,11 +11367,11 @@ p {
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.95rem;
-  color: #fff;
+  color: #6c109e;
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ffc800;
+  color: white;
 }
 
 @media (min-width: 992px) {
@@ -11388,8 +11392,13 @@ p {
   }
   #mainNav.navbar-shrink {
     padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: #212529;
+    padding-bottom: 3rem;
+    background: linear-gradient(to bottom, rgba(215, 168, 240, 1),
+    rgba(215, 168, 240, 1),
+                                            rgba(215, 168, 240, 0.8),
+                                            
+                                            rgba(215, 168, 240, 0.1), 
+                                            rgba(215, 168, 240, 0));
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -11464,7 +11473,8 @@ header.masthead .masthead-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 200, 0, 0.9);
+  background: rgba(215, 168, 240, 0.5);
+  box-shadow: inset 0 0 10px rgb(94, 44, 121, 0.7);
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -11533,6 +11543,11 @@ header.masthead .masthead-heading {
   opacity: 0.3;
 }
 
+.transitionPortfolioCover {
+  transition: all 1s; }
+
+.transitionPortfolioCover:hover {
+  transform: scale(1.04, 1.04); }
 .timeline {
   position: relative;
   padding: 0;
