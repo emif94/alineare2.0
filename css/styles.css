@@ -2194,7 +2194,7 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.75);
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
@@ -7524,6 +7524,11 @@ textarea.form-control-lg {
   padding-top: 3rem !important;
 }
 
+.pt-100 {
+  padding-top: 100px;
+}
+
+
 .pe-0 {
   padding-right: 0 !important;
 }
@@ -11735,12 +11740,15 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-image: url(../assets/img/contact-background.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
 }
+
+
+
 section#contact .section-heading {
-  color: #fff;
+  color: #b15fdd;
 }
 section#contact form#contactForm .form-group {
   margin-bottom: 1.5rem;
@@ -11904,7 +11912,6 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .mapPB{
   padding-bottom: 15px !important;
-  background-color: #212529;
 }
 
 .centerItem{
