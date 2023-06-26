@@ -237,10 +237,10 @@ sup {
 
 a {
   color: #ffc800;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
-  color: #cca000;
+  color: white;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -7328,6 +7328,10 @@ textarea.form-control-lg {
   margin-top: 3rem !important;
 }
 
+.mt-50{
+  margin-top: 50px;
+}
+
 .mt-auto {
   margin-top: auto !important;
 }
@@ -11800,6 +11804,9 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+.footerGradient {
+  background-image:linear-gradient(to right, #cd98ea, #cd98ea, #8348a4);
+  margin-top: 0px; }
 
 /* Before => After  Slider ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////->>>*/
 /* It will be deactivated to include slider on webpages, activate if necessary
@@ -11871,6 +11878,11 @@ section#contact form#contactForm :-ms-input-placeholder {
   border:3px solid white;
 
 }
+
+/* <<<---END Before => After  Slider <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*Whatsapp floating logo--------------------------------------------------------------------->>>*/
+
 .whatsapp {
   position: fixed;
   top: 650px;
@@ -11879,6 +11891,8 @@ section#contact form#contactForm :-ms-input-placeholder {
   justify-content: flex-end;
   z-index: 999999;
   border-radius: 50px; }
+/*END Whatsapp floating logo---------------------------------------------------------------------<<<*/
+
 
   /*-----Animaciones--------------------------------------------------------------->>>*/
 .animatedhover {
@@ -11918,6 +11932,58 @@ section#contact form#contactForm :-ms-input-placeholder {
   display: flex;
   justify-content: center;
 }
+
+/*FOOTER*/
+.centerItemsFooter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:20px;
+}
+
+.footerItems{
+  margin: 8px 20px;
+}
+.centerItemsFooterText{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding:20px;
+}
+
+.footerFont{
+  color:#6c109e;
+  text-decoration: none;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+
+}
+
+.footerFont2{
+  color:#6c109e;
+  text-decoration: none;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+
+}
+.footerFont3{
+  color:#6c109e;
+  text-decoration: none;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+
+}
+
+.footerTextAlign{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
 .appear {
   opacity: 0;
   animation-name: fade-in;
@@ -11935,4 +12001,4 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
 }
 
-/* <<<---END Before => After  Slider ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
