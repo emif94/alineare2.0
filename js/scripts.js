@@ -7,7 +7,26 @@
 // Scripts
 // 
 
+
 window.addEventListener('DOMContentLoaded', event => {
+
+  //"Urgencias" Alert
+  /*Swal.fire({
+    title: '<strong>Tenés una urgencia?</strong>',
+    icon: 'info',
+    html:
+      'Contamos con servicio de <b>Urgencias 24hs</b>',
+    showCloseButton: true,
+    showCancelButton: true,
+    showConfirmButton: false,
+    focusConfirm: false,
+    cancelButtonText:
+    'No, gracias',
+
+    footer:` <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5492613725884&text=Hola!%20Tengo%20una%20urgencia%20y%20necesito%20un%20turno%20por%20favor." target="_blank"> 
+                <i class="fa-solid fa-bolt" style="color: #ffffff;"></i> Turno Urgencia
+            </a>`
+  })*/
 
     // Navbar shrink function
     var navbarShrink = function () {
@@ -77,6 +96,8 @@ function checkWidget() {
   
 checkWidget();
 // Call the removeWidget function after the page has loaded
+/*
+
 
 //Before After Slider Function -->>>
 const slider = document.getElementById('before-after-slider');
@@ -167,7 +188,7 @@ function pauseEvent(e){
     e.cancelBubble=true;
     e.returnValue=false;
     return false;
-}
+} */
 
 
 //Before After Slider Function END--<<<
