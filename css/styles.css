@@ -11350,10 +11350,19 @@ p {
   border-radius: 100%;
 }
 
+nav div div.show {
+  background-image: linear-gradient(to right,  black, black, rgba(0, 0, 0, 0.01),  rgba(0, 0, 0, 0.01)) ;
+  border-radius: 10px;
+}
+nav.navbar-shrink div div.show {
+  background-image: linear-gradient(to right, #d7a8f0, #d7a8f0, rgba(215, 168, 240, 0.01), rgba(215, 168, 240, 0.01)) ;
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
 
 #mainNav.navbar-shrink {
   padding-top: 1rem;
