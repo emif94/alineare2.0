@@ -11933,6 +11933,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #595959 !important;  
 }
 
+.hideImg{
+  display:none;
+}
+
    /*-----Custom Fonts-END--------------------------------------------------------------<<<*/
 
 /*Custom Media Screen //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -11965,7 +11969,20 @@ section#contact form#contactForm :-ms-input-placeholder {
   nav.navbar-shrink div div.show {
     background-image: linear-gradient(to right, #d7a8f0, #d7a8f0, rgba(215, 168, 240, 0.01), rgba(215, 168, 240, 0.01)) ;
   }  
+
+  video {
+    display: none;
+  }
+
+  .showImg{
+    display:block;
+  }
 }
+
+
+
+
+
 
 .mapPB{
   padding-bottom: 15px !important;
@@ -12020,6 +12037,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 .device[data-device=iPhoneX][data-orientation=portrait][data-color=black]::after {
   content: "";
   background-image: url("../assets/img/portrait_black.png");
+  z-index: 3;
 }
 
 .device[data-device=iPhoneX][data-orientation=portrait][data-color=black] .button {
