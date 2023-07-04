@@ -11516,7 +11516,7 @@ header.masthead .masthead-heading {
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Mulish', sans-serif , -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   margin-bottom: 0;
 }
@@ -11913,6 +11913,9 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .animatedhover:hover {
   animation-play-state: running; }
+ /*-----Animaciones-END--------------------------------------------------------------<<<*/ 
+
+ /*-----Custom Fonts--------------------------------------------------------------->>>*/
 
  .pFont{
   font-family: 'Mulish', sans-serif !important;
@@ -11924,8 +11927,14 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: 'Mulish', sans-serif !important;
   font-weight: 700;
   font-size: 25px;
-
  }
+
+ .grayFont{
+  color: #595959 !important;  
+}
+
+   /*-----Custom Fonts-END--------------------------------------------------------------<<<*/
+
 /*Custom Media Screen //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 @media (max-width:767px) {
   .container-slider2 {
