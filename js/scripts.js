@@ -11,22 +11,22 @@
 window.addEventListener('DOMContentLoaded', event => {
 
   //"Urgencias" Alert
-  /*Swal.fire({
-    title: '<strong>Tenés una urgencia?</strong>',
+  Swal.fire({
+    title: '<strong class="subtitleFont">Tenés una urgencia?</strong>',
     icon: 'info',
     html:
-      'Contamos con servicio de <b>Urgencias 24hs</b>',
+      '<span class="pFont">Contamos con servicio de <b>Urgencias 24hs</span></b>',
     showCloseButton: true,
     showCancelButton: true,
     showConfirmButton: false,
     focusConfirm: false,
     cancelButtonText:
-    'No, gracias',
+    '<span class="pFont">No, gracias</span>',
 
     footer:` <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5492613725884&text=Hola!%20Tengo%20una%20urgencia%20y%20necesito%20un%20turno%20por%20favor." target="_blank"> 
-                <i class="fa-solid fa-bolt" style="color: #ffffff;"></i> Turno Urgencia
+                <i class="fa-solid fa-bolt" style="color: #ffffff;"></i><span class="pFont"> Turno Urgencia </span>
             </a>`
-  })*/
+  })
 
     // Navbar shrink function
     var navbarShrink = function () {
